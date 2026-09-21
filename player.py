@@ -5,10 +5,8 @@ import pygame
 class Player(CircleShape):
 
     def __init__(self, x: float, y: float):
-        self.x = x
-        self.y = y
         super().__init__(x, y, PLAYER_RADIUS)
-        self.rotation = 0
+        self.rotation: float = 0.0
 
     # in the Player class
     def triangle(self) -> list[pygame.Vector2]:
